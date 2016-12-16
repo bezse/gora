@@ -99,6 +99,6 @@ done
 #run it
 export HADOOP_CLASSPATH="$CLASSPATH"
 LIBJARS=`echo $HADOOP_CLASSPATH | tr : ,`
-hadoop jar "$GORACI_HOME/lib/gora-goraci-0.7-SNAPSHOT.jar" $CLASS -libjars "$LIBJARS" "$@"
+hadoop jar "$GORACI_HOME/lib/gora-goraci-0.7-mongo-3.4.jar" $CLASS -libjars "$LIBJARS" "$@"
 
 

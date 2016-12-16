@@ -23,7 +23,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.apache.gora.gradle:gora-gradle-plugin:0.7-SNAPSHOT'
+        classpath 'org.apache.gora.gradle:gora-gradle-plugin:0.7-mongo-3.4'
         classpath "org.apache.gora:gora-core:${goraVersion}"
     }
 }
