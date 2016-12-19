@@ -27,6 +27,7 @@
     <relativePath>../</relativePath>
   </parent>
   <artifactId>gora-mongodb</artifactId>
+  <version>0.6.1-mongo-3.4</version>
   <packaging>bundle</packaging>
 
   <name>Apache Gora :: MongoDB</name>
@@ -52,8 +53,8 @@
   <properties>
     <osgi.import>*</osgi.import>
     <osgi.export>org.apache.gora.mongodb*;version="${project.version}";-noimport:=true</osgi.export>
-    <mongo.driver.version>2.13.1</mongo.driver.version>
-    <mongo.embed.version>1.47.3</mongo.embed.version>
+    <mongo.driver.version>3.4.0</mongo.driver.version>
+    <mongo.embed.version>1.50.2</mongo.embed.version>
   </properties>
 
   <build>
@@ -100,6 +101,7 @@
       <groupId>org.apache.gora</groupId>
       <artifactId>gora-core</artifactId>
       <scope>compile</scope>
+      <version>${parent.version}</version>
     </dependency>
 
     <dependency>
@@ -107,6 +109,7 @@
       <artifactId>gora-core</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
+      <version>${parent.version}</version>
     </dependency>
     <!-- END of Gora Internal Dependencies -->
 
